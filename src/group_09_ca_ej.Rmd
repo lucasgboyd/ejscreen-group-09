@@ -1,0 +1,21 @@
+---
+title: "Group 09 CA pollution burden"
+author: "Lucas Boyd & Katie Munster"
+date: "11/12/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# attaching packages
+library(janitor)
+library(here)
+library(tidyverse)
+```
+
+```{r}
+# reading in the CES data
+ces <- read_csv(here("data", "ces3demographics.csv")) %>% 
+  clean_names()
+```
+
