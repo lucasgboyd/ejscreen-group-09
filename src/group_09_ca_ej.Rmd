@@ -5,8 +5,8 @@ date: "11/12/2021"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r setup, include=TRUE, message = FALSE, warning = FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
 # attaching packages
 library(janitor)
 library(here)
@@ -23,10 +23,10 @@ ces <- read_csv(here("data", "ces3demographics.csv")) %>%
 # create a basic scatterplot graph showing % white vs CalEnviroScreen pollution burden score
 ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) +
   geom_hex() + # changing plot to a hexbin
-  labs(x = "% White Population", y = "Pollution Burden Score") +
+  labs(x = "% White Population", y = " CES Pollution Burden Score") +
   scale_fill_gradient(low = "slategray1", high = "steelblue4") + # Updated the fill color gradient
   theme_minimal() # Updated the theme
 ```
 
-
+**Fig. 1** shows the CalEnviroScreen (CES) Pollution Burden Score compared to the percent white population in different areas throughout California. The CES score is a function of adverse environmental exposure, sensitivity of the population and disadvantaging socioeconomic factors. A higher score is associated with a higher pollution burden. 
 
