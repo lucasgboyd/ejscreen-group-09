@@ -30,3 +30,8 @@ ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) +
 
 **Fig. 1** shows the CalEnviroScreen (CES) Pollution Burden Score compared to the percent white population in different areas throughout California. The CES score is a function of adverse environmental exposure, sensitivity of the population and disadvantaging socioeconomic factors. A higher score is associated with a higher pollution burden. 
 
+California communities with higher percentages of white population tend to have lower CES pollution burden scores.
+
+#### Citation
+
+Office of Environmental Health and Hazard Assessment (2018). CalEnviroScreen 3.0 Results. http://oehha.ca.gov/calenviroscreen/report/calenviroscreen-30
